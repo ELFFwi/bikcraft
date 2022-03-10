@@ -1,0 +1,23 @@
+/* all */
+@import "./global/global.css";
+@import "./global/all.css";
+@import "./global/footer.css";
+@import "./global/header.css";
+/* Home */
+@import "./home/intro.css";
+@import "./home/escolha.css";
+@import "./home/tecav.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+@import "./home/seguro.css";
+/* termos */
+@import "./termos/termos.css";
+/* bicicletas */
+@import "./bicicletas/bicicletas.css";
+@import "./bicicletas/nimbus.css";
+/* seguros */
+@import "./seguros/seguros.css";
+/* contato */
+@import "./contato/contato.css";
+/* orçamento */
+@import "./orçamento/orçamento.css";

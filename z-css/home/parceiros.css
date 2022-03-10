@@ -1,0 +1,79 @@
+.parceiros-container {
+    max-width: 1400px;
+    margin: 3.75rem auto;
+    margin-bottom: 7.5rem;
+    padding: 0 1.25rem;
+}
+
+.parceiros-lista {
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+}
+
+.parceiros-container #titulo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    margin-bottom: 4.5rem;
+}
+
+.par{
+    padding: 2rem;
+    display: flex;
+}
+
+.par img {
+    margin: auto;
+}
+
+.p-1 {
+    border-bottom: 1px solid var(--white-black-05);
+    border-right: 1px solid var(--white-black-05);
+}
+.p-2, .p-3 {
+    border-bottom: 1px solid var(--white-black-05);
+    border-right: 1px solid var(--white-black-05);
+    border-left: 1px solid var(--white-black-05);
+}
+.p-4 {
+    border-bottom: 1px solid var(--white-black-05);
+    border-left: 1px solid var(--white-black-05);
+}
+.p-5 {
+    border-top: 1px solid var(--white-black-05);
+    border-right: 1px solid var(--white-black-05);
+}
+.p-6, .p-7 {
+    border-top: 1px solid var(--white-black-05);
+    border-right: 1px solid var(--white-black-05);
+    border-left: 1px solid var(--white-black-05);
+}
+.p-8 {
+    border-top: 1px solid var(--white-black-05);
+    border-left: 1px solid var(--white-black-05);
+}
+
+
+@media (max-width: 800px){
+
+    .parceiros-container #titulo {
+        margin-bottom: 1.25rem;
+    }
+
+    .parceiros-lista {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .par {
+        padding: 1.25rem;
+    }
+
+    .p-2, .p-6 {
+        border-right: none;
+    }
+    .p-3, .p-7 {
+        border-left: none;
+    }
+}

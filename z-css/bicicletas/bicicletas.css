@@ -1,0 +1,140 @@
+.bicicletas-bg {
+    background: #111;
+}
+
+.bicicletas-container{
+    max-width: 1200px;
+    padding: 3.75rem 1.25rem;
+    margin: 0 auto;
+}
+
+.bicicletas-container #titulo{
+    margin-bottom: 0rem;
+}
+
+.bicicletas-container-content {
+    margin: 3.75rem 0;
+}
+
+.bicicletas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 2.5rem;
+}
+
+.bicicletas-content p{
+    margin: 1.25rem 0 2rem 0;
+}
+
+.bicicletas-content h2::before{
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background: var(--prima-1);
+    margin-bottom: 8px;
+}
+
+.magic-bg{
+    background: linear-gradient(to right, #fff 30%, #111 0%);
+    padding: 3.75rem 0;
+    margin: 3.75rem 0;
+}
+
+.bicicletas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.bicicleta-vantagens {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.bicicleta-vantagens a{
+    place-self: end;
+}
+
+.bicicleta-vantagens li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.bicicleta-vantagens ul{
+    display: grid;
+    gap: 1rem;
+}
+
+.bicicleta-vantagens img{
+    width: 24px;
+}
+
+.btn-all.seta::after{
+    content: "";
+    width: 18px;
+    display: inline-block;
+    height: 10px;
+    margin-left: 12px;
+    background: url(../../imgs/icones/seta.svg);
+    transition: transform 0.2s;
+}
+
+.btn-all.seta {
+    display: flex;
+    align-items: center;
+}
+
+.btn-all.seta:hover::after{
+    transform: translateX(4px);
+}
+@media (max-width: 800px) {
+    .bicicletas{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .magic-bg{
+        padding: 2.5rem 0;
+        margin: 2.5rem 0;
+        background: #111;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .bicicleta-vantagens{
+        grid-template-columns: 1fr;
+    }
+
+    .bicicleta-vantagens ul{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bicicleta-vantagens a{
+        place-self: start;
+        margin-top: 2rem;
+        padding: 0.75rem 2rem;
+    }
+
+    .bicicleta-vantagens span {
+        font-size: 1rem;
+    }
+}
+
+.img-bik{
+    position: relative;
+}
+
+.preco-bik{
+    background: #000;
+    display: inline-block;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    border-radius: 4px 0 0 4px;
+}
+

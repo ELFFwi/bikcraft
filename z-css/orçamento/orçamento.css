@@ -1,0 +1,233 @@
+.orcamento-bg{
+    background: #111;
+}
+
+#orcamentoo form{
+    margin-top: 0;
+    padding: 0;
+    background: none;
+}
+
+#orcamentoo{
+    background: var(--white-black-01);
+}
+
+.orcamento-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3.75rem 1.25rem;
+}
+
+.orcamento--container h2{
+    text-transform: uppercase;
+    grid-column: 1 / -1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.orcamento-container #titulo{
+    margin-bottom: 0;
+}
+
+.orcamento--container{
+    box-shadow: inset 0 300px #111, inset 0 -270px var(--white-black-01);
+    border-radius: 0px;
+    margin-bottom: 7.5rem;
+}
+
+.orcamento--content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+.orcamento-content, .orcamento-form{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.orcamento-content {
+    background: #000;
+    border-radius: 4px 0 0 4px;
+    padding: 3.75rem;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    align-content: start;
+    gap: 1.25rem;
+}
+
+.orcamento-content label{
+    font: 400 1rem/1.5 "Poppins", sans-serif;
+    color: var(--white-black-20);
+    background-color: var(--white-black-80);
+    padding: .75rem 1rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    border: 1px solid var(--white-black-80);
+    border: 1px solid var(--white-black-80);
+}
+
+.orcamento-content input:checked + label{
+    background: #fff;
+    color: #111;
+}
+
+.orcamento-content input{
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.orcamento-content > * {
+    grid-column: 1 / -1;
+}
+
+.orcamento-content > label{
+    grid-column: initial;
+}
+
+.orcamento-content label::before{
+    content: "";
+    display: inline-block;
+    width:.75rem;
+    height: .75rem;
+    box-sizing: border-box;
+    border: 1px solid var(--white-black-40);
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.orcamento-content input:checked + label::before{
+    border-color: var(--white-black-50);
+    box-shadow: inset 0 0 0 2.5px #fff, inset 0 0 0 6px var(--white-black-50);
+}
+
+.orcamento-content label:hover{
+    background: var(--white-black-70);
+    border-color: var(--white-black-70);
+}
+
+.orcamento-content input:focus + label{
+    box-shadow: 0 0 0 2px var(--prima-1);
+    border: 1px solid #000;
+}
+
+.orcamento-content label span{
+    display: none;
+}
+
+.orcamento-content input:checked + label span{
+    display: block;
+}
+
+.orcamento-content h2{
+    margin-top: 1.25rem;
+}
+
+.orcamento--container h2::before{
+    content: "";
+    display: inline-block;
+    width: .25rem;
+    height: .5rem;
+    background: var(--prima-1);
+    position: absolute;
+    left: -.75rem;
+}
+
+.orcamento-form{
+    background: #fff;
+    border-radius: 0 4px 4px 0;
+}
+
+.orcamento--form{
+    background: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin: 0;
+    border-radius: 0px;
+}
+
+.orcamento-form .form-1{
+    padding: 3.75rem 3.75rem 0;
+}
+
+.orcamento-form .form-2{
+    padding: 2.5rem 3.75rem 3.75rem;
+}
+
+.col-2{
+    grid-column: 1 / -1;
+}
+
+#orcamento-bikcraft, #orcamento-seguro{
+    display: none;
+}
+
+#bikcraft-radio:checked ~ #orcamento-bikcraft, #seguro-radio:checked ~ #orcamento-seguro{
+    display: grid;
+    gap: 1.25rem;
+}
+
+.orcamento-detalhes{
+    display: none;
+    background: #fff;
+    padding: 1.25rem;
+    border-radius: .25rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.orcamento-detalhes li{
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.orcamento-detalhes li img{
+    width: 1rem;
+    margin-right: .5rem;
+}
+
+.orcamento-content input:checked + label +.orcamento-detalhes{
+    display: grid;
+}
+
+@media(max-width: 1200px){
+    .orcamento-content{
+        padding: 2rem;
+    }
+
+    .orcamento-form .form-1{
+        padding: 2rem 2rem 0;
+    }
+
+    .orcamento-form .form-2{
+        padding: 2rem;
+    }
+}
+
+@media(max-width: 800px){
+    .orcamento--content{
+        grid-template-columns: 1fr;
+    }
+
+    .orcamento-content{
+        border-radius: 4px 4px 0 0;
+    }
+
+    .orcamento-form{
+        border-radius: 0 0 4px 4px;
+    }
+}
+
+@media(max-width: 400px){
+    .orcamento-content, .orcamento--form{
+        grid-template-columns: 1fr;
+    }
+}

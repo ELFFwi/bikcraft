@@ -1,0 +1,112 @@
+.footer-bg {
+    background: #000;
+    color: var(--white-black-30);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 3fr 5fr 4fr;
+    max-width: 1200px;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 4rem 1.25rem;
+}
+
+.footer-container p {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.contato-footer, .info-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+}
+
+.footer-container > span {
+    margin-top: 3rem;
+    grid-column: 1/-1;
+}
+
+.redes, .contato-redes{
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    margin-top: 1rem;
+}
+
+.span-3{
+    position: relative;
+    margin-top: 1rem;
+}
+
+.span-3::after{
+    content: "";
+    display: block;
+    width: 360px;
+    max-width: 360px;
+    height: 2px;
+    background: var(--white-black-90);
+    position: absolute;
+    left: -0px;
+    top: -17.5px;
+}
+.redes::after{
+    content: "";
+    display: block;
+    width: 360px;
+    max-width: 360px;
+    height: 2px;
+    background: var(--white-black-90);
+    position: absolute;
+    left: -0px;
+    top: -17.5px;
+}
+
+.footer-container a{
+    max-width: max-content;
+}
+
+.footer-container a:hover{
+    color: #fff;
+}
+
+@media (max-width: 1000px) {
+    .footer-container{
+        grid-template-columns: 2fr 3fr 3fr;
+    }
+
+}
+@media (max-width: 1100px) {
+    .span-3::after, .redes::after{
+        width: 270px;
+    }
+}
+
+@media(max-width: 800px){
+.footer-container > img {
+    display: none;
+}
+
+.footer-container{
+    grid-template-columns: 1fr 1fr;
+}
+
+.span-3::after, .redes::after{
+    width: 200px;
+}
+
+.contato-footer span, .info-footer a{
+    font-size: 1rem;
+}
+}
+
+@media (max-width: 450px){
+    .span-3::after, .redes::after{
+        width: 160px;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+}

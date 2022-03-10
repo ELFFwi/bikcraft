@@ -1,0 +1,89 @@
+.btn-prata {
+    background: var(--white-black-80);
+    color: var(--white-black-05);
+    font-size: 1.125rem;
+    padding: 1.125rem 2.25rem;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 1, 0.1);
+    font-family: 'poppins';
+    font-weight: 400;
+}
+
+.btn-prata:hover {
+    background: var(--white-black-70);
+}
+
+.seguros-bg{
+    background: #111;
+    color: #fff;
+}
+
+.seguros-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3.75rem 1.25rem;
+}
+
+.planos-seguro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+form{
+    background: var(--white-black-100);
+    padding: 2rem 2rem 2rem 3.75rem;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+}
+
+.plano-preço{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.planos-seguro span{
+    color: var(--white-black-40);
+    text-align: right;
+    display: block;
+}
+
+.beneficios-plano{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.beneficio {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.beneficio::before{
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 9px;
+    align-items: center;
+    background-image: url(../../imgs/icones/lista.svg);
+    position: absolute;
+    left: -21px;
+}
+
+@media (max-width: 800px) {
+    .planos-seguro {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
