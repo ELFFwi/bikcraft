@@ -9,13 +9,14 @@
 
     <link rel="icon" href="./imgs/icones/favicon.svg" type="image/svg+xml">
 
-    <link href="./z-css/style.css" rel="preload" as="style">
-    <link href="./z-css/style.css" rel="stylesheet">
+    <link href="./z-css/style.min.css" rel="preload" as="style">
+    <link href="./z-css/style.min.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-    
+
+<script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
 
@@ -36,18 +37,18 @@
         <div class="intro-bg">
         <div class="intro-container">
             <div class="intro-text">
-            <h1 id="titulo">Bicicletas feitas sob medida<span class="ponto">.</span></h1>
-            <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-            <a class="btn-all buttonjs" href="./bicicletas.html">Escolha a sua</a>
+            <h1 id="titulo" data-anime="150" class="fadeInDown">Bicicletas feitas sob medida<span class="ponto">.</span></h1>
+            <p data-anime="300" class="fadeInDown">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
+            <a class="btn-all buttonjs fadeInLeft" href="./bicicletas.html" data-anime="450">Escolha a sua</a>
             </div>
-            <picture>
+            <picture data-anime="600" class="fadeInRight">
                 <source media="(max-width: 800px)" srcset="./imgs/bicicletas/nimbus.jpg">
                 <img src="./imgs/fotos/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta.">
               </picture>
         </div>
 
         </div>
-        <div class="escolha-container">
+        <div class="escolha-container fadeInUp" data-anime="800">
             <h2 class="font-p-lll h2-escolha">escolha a sua<span class="ponto">.</span></h2>
             <ul class="escolha-bicicletas">
                 <li class="escolha-item"><a href="./bicicletas/magic.html"><img src="./imgs/bicicletas/magic-home.jpg" alt="Bicicleta1" width=920 height=1040><p class="font-p-ll">Magic Might</p><span class="cor-8 font-r-m">R$ 2499</span></a></li>
@@ -123,7 +124,7 @@
                         <li class="beneficio">Suporte 08h às 18h</li>
                         <li class="beneficio">Cobertura estadual</li>
                     </ul>
-                    <a href="./orçamento.html" class="btn-prata">inscreva-se</a>
+                    <a href="./orçamento.html?tipo=seguro-radio&produto=prata" class="btn-prata">inscreva-se</a>
             </form>
 
             <form class="plano-ouro">
@@ -139,7 +140,7 @@
                         <li class="beneficio">Desconto em parceiros</li>
                         <li class="beneficio">Acesso ao Clube Bikcraft</li>
                     </ul>
-                    <a href="./orçamento.html" class="btn-all">inscreva-se</a>
+                    <a href="./orçamento.html?tipo=seguro-radio&produto=ouro" class="btn-all">inscreva-se</a>
             </form>
             </div>
         </div>
@@ -171,7 +172,8 @@
             <span class="cor-6 font-r-m">Bikcraft © Alguns direitos reservados.</span>
         </div>
     </footer>
-    <script src="actualy.js"></script>
+    <script src="./plugins/simple-anime.js"></script>
+<script src="./actualy.js"></script>
 </body>
 
 </html>

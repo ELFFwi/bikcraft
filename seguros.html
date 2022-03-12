@@ -9,12 +9,13 @@
 
     <link rel="icon" href="./imgs/icones/favicon.svg" type="image/svg+xml">
 
-    <link href="./z-css/style.css" rel="preload" as="style">
-    <link href="./z-css/style.css" rel="stylesheet">
+    <link href="./z-css/style.min.css" rel="preload" as="style">
+    <link href="./z-css/style.min.css" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -48,7 +49,7 @@
                         <li class="beneficio">Suporte 08h às 18h</li>
                         <li class="beneficio">Cobertura estadual</li>
                     </ul>
-                    <a href="./orçamento.html" class="btn-prata">inscreva-se</a>
+                    <a href="./orçamento.html?tipo=seguro-radio&produto=prata" class="btn-prata">inscreva-se</a>
             </form>
 
             <form class="plano-ouro">
@@ -64,7 +65,7 @@
                         <li class="beneficio">Desconto em parceiros</li>
                         <li class="beneficio">Acesso ao Clube Bikcraft</li>
                     </ul>
-                    <a href="./orçamento.html" class="btn-all">inscreva-se</a>
+                    <a href="./orçamento.html?tipo=seguro-radio&produto=ouro" class="btn-all">inscreva-se</a>
             </form>
             </div>
         </div>
@@ -113,23 +114,23 @@
         <div class="seguro-perguntas-container">
             <h1 id="titulo">perguntas frequentes<span class="ponto">.</span></h1>
             <ul>
-                <li><h2 class="perguntas font-p-m-b">Qual forma de pagamento vocês aceitam?</h2>
-                <p class="font-r-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                <li><h2><button class="perguntas font-p-m-b" aria-controls="pergunta01" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></h2>
+                <p id="pergunta01" class="font-r-s cor-9 ativacao">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </li>
-                <li><h2 class="perguntas font-p-m-b">Como posso entrar em contato?</h2>
-                <p class="font-r-s cor98">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                <li><h2><button class="perguntas font-p-m-b" aria-controls="pergunta02" aria-expanded="false">Como posso entrar em contato?</button></h2>
+                <p id="pergunta02" class="font-r-s cor9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </li>
-                <li><h2 class="perguntas font-p-m-b">Vocês possuem algum desconto?</h2>
-                <p class="font-r-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                <li><h2><button class="perguntas font-p-m-b" aria-controls="pergunta03" aria-expanded="false">Vocês possuem algum desconto?</button></h2>
+                <p id="pergunta03" class="font-r-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </li>
-                <li><h2 class="perguntas font-p-m-b">Vocês possuem algum desconto?</h2>
-                <p class="font-r-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                <li><h2><button class="perguntas font-p-m-b" aria-controls="pergunta04" aria-expanded="false">Vocês possuem algum desconto?</button></h2>
+                <p id="pergunta04" class="font-r-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </li>
-                <li><h2 class="perguntas font-p-m-b">Posso parcelar no boleto?</h2>
-                <p class="font-r-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                <li><h2><button class="perguntas font-p-m-b" aria-controls="pergunta05" aria-expanded="false">Posso parcelar no boleto?</button></h2>
+                <p id="pergunta05" class="font-r-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </li>
-                <li><h2 class="perguntas font-p-m-b">Quantas trocas posso fazer ao ano?</h2>
-                <p class="font-r-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
+                <li><h2><button class="perguntas font-p-m-b" aria-controls="pergunta06" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></h2>
+                <p id="pergunta06" class="font-r-s cor-9">Aceitamos pagamentos parcelados em todos os cartões de crédito. Para pagamentos à vista também aceitarmos PIX e Boleto através do PagSeguro.</p>
                 </li>
             </ul>
         </div>
@@ -161,6 +162,7 @@
             <span class="cor-6 font-r-m">Bikcraft © Alguns direitos reservados.</span>
         </div>
     </footer>
+<script src="./actualy.js"></script>
 </body>
 
 </html>

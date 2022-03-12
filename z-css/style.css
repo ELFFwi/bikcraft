@@ -21,3 +21,5 @@
 @import "./contato/contato.css";
 /* orçamento */
 @import "./orçamento/orçamento.css";
+/* animacao */
+@import "./home/anima.css";

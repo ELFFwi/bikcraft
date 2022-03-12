@@ -41,7 +41,8 @@
         position: absolute;
     }
 
-    .menu-list a:hover:after{
+    .menu-list a:hover::after,
+    .menu-list a.ativado::after{
         width: 100%;
     }
 

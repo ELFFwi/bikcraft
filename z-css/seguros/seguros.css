@@ -55,6 +55,9 @@
     margin-top: 1.25rem;
     padding-left: 1.25rem;
 }
+.js .seguro-perguntas-container p{
+    display: none;
+}
 
 .seguro-perguntas-container li {
     padding: 1.25rem;
@@ -70,6 +73,10 @@
     grid-template-columns: auto 1fr auto;
     align-items: center;
     cursor: pointer;
+    background: none;
+    width: 100%;
+    text-align: left;
+    border: none;
 }
 
 .perguntas::before {
@@ -89,6 +96,11 @@
     transition: 0.3s;
 }
 
-.perguntas:hover::after{
+.perguntas:hover::after,
+.js .perguntas[aria-expanded="true"]::after{
     transform: rotate(180deg);
+}
+
+.js .seguro-perguntas-container p.ativacao{
+    display: block;
 }
